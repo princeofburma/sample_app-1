@@ -1,0 +1,5 @@
+<% provide(:title, 'Success Stories') %>
+<h1>Success Stories</h1>
+<p>
+  success stories go here
+</p>

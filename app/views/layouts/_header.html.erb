@@ -1,11 +1,15 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "sample app", root_path, id: "logo" %>
+      <%= link_to "logo here", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home",    root_path %></li>
-          <li><%= link_to "Help",    help_path %></li>
+          <li><%= link_to "How It Works",    howitworks_path %></li>
+          <li><%= link_to "Start A Project",    startaproject_path %></li>
+          <li><%= link_to "Suggest A Project", suggestaproject_path %></li>
+          <li><%= link_to "Succes Stories", successstories_path %></li>
+          <li><%= link_to "Donate", donate_path %></li>
           <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">

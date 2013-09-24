@@ -1,0 +1,5 @@
+<% provide(:title, 'Start A Project') %>
+<h1>Start A Project</h1>
+<p>
+  suggest a project form goes here
+</p>

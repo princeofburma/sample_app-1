@@ -14,4 +14,25 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def publicrelations
+  end
+
+  def faq
+  end
+
+  def howitworks
+  end
+
+  def startaproject
+  end
+
+  def suggestaproject
+  end
+
+  def successstories    
+  end
+
+  def donate    
+  end
 end

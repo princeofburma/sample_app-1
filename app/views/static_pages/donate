@@ -1,0 +1,5 @@
+<% provide(:title, 'Donate') %>
+<h1>Donate</h1>
+<p>
+ donate button and form go here
+</p>
