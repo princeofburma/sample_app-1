@@ -35,4 +35,8 @@ class StaticPagesController < ApplicationController
 
   def donate    
   end
+
+  def startyourproject
+  end
+  
 end

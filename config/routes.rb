@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :groups
+
   resources :users do
     member do
       get :following, :followers
@@ -24,6 +26,9 @@ SampleApp::Application.routes.draw do
   match '/suggestaproject',   to: 'static_pages#suggestaproject'
   match '/successstories',   to: 'static_pages#successstories'
   match '/donate',   to: 'static_pages#donate'
+  match '/groups',   to: 'static_pages#groups'
+  match '/startyourproject',   to: 'static_pages#startyourproject'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

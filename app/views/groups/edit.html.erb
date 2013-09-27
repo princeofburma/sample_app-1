@@ -1,0 +1,43 @@
+<h1>Edit Your Group</h1>
+
+<%= link_to 'Back', groups_path %>
+<div class="row">
+  <div class="span3 offset3">
+    <%= form_for(@group) do |f| %>
+      <%= render 'shared/error_messages', object: @group %>
+      <%= f.label :Birthdate %>
+      <%= f.text_field :dob %>
+
+      <%= f.label :Title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :Telephone %>
+      <%= f.password_field :telephone %>
+
+      <%= f.label :'Group Name'  %>
+      <%= f.password_field :group_name %>
+
+      <%= f.label :'Group Type' %>
+      <%= f.text_field :group_type %>
+
+      <%= f.label :Street %>
+      <%= f.text_field :street_address %>
+
+      <%= f.label :City %>
+      <%= f.password_field :city %>
+
+      <%= f.label :State  %>
+      <%= f.password_field :state %>
+
+      <%= f.label :Zip %>
+      <%= f.text_field :zip %>
+
+      
+
+      <%= f.submit "Add My Group", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'View Group', @group %> |
+<%= link_to 'Back', groups_path %>

@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+<H1>Here Is Your Group Information</H1>
+
+<p>
+  <b>User:</b>
+  <%= @group.user_id %>
+</p>
+
+<p>
+  <b>Birthdate:</b>
+  <%= @group.dob %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @group.title %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @group.telephone %>
+</p>
+
+<p>
+  <b>Group name:</b>
+  <%= @group.group_name %>
+</p>
+
+<p>
+  <b>Group type:</b>
+  <%= @group.group_type %>
+</p>
+
+<p>
+  <b>Street address:</b>
+  <%= @group.street_address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @group.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @group.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @group.zip %>
+</p>
+
+<p>
+  <b>Checking number:</b>
+  <%= @group.checking_number %>
+</p>
+
+<p>
+  <b>Routing number:</b>
+  <%= @group.routing_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_group_path(@group) %> |
+<%= link_to 'Back', groups_path %>

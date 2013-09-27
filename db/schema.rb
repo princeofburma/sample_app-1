@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120520230206) do
+ActiveRecord::Schema.define(:version => 20130927143913) do
+
+  create_table "groups", :force => true do |t|
+    t.integer  "user_id"
+    t.date     "dob"
+    t.string   "title"
+    t.string   "telephone"
+    t.string   "group_name"
+    t.string   "group_type"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "checking_number"
+    t.string   "routing_number"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "microposts", :force => true do |t|
     t.string   "content"
