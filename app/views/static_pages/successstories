@@ -1,5 +1,5 @@
-<% provide(:title, 'Success Stories') %>
-<h1>Success Stories</h1>
+<% provide(:title, 'Project Page') %>
+<h1>Project Page</h1>
 <p>
-  success stories go here
+  List of current projects
 </p>
